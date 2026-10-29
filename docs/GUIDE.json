@@ -1,0 +1,30 @@
+{
+  "title": "Maya Long Count Calendar",
+  "intro": "The Maya Long Count records how many days have elapsed since a traditional starting point. It lets historians read dates across very long spans without relying on our modern month names.",
+  "diagram": "longcount",
+  "diagram_caption": "FIVE POSITIONS RECORD ONE DATE",
+  "caption_detail": "A Long Count date is often written as five numbers, such as 13.0.0.0.0. Each position has a different number of days.",
+  "steps": [
+    {
+      "heading": "Read five positions from largest to smallest",
+      "text": "A baktun equals 144,000 days; a katun 7,200; a tun 360; a winal 20; a kin one day. Add the positions to get a total day count."
+    },
+    {
+      "heading": "Notice the unusual 18",
+      "text": "Twenty winals would be 400 days, but a tun uses 18 winals: 360 days. Larger positions are counted in groups of 20."
+    },
+    {
+      "heading": "Connect the count to today",
+      "text": "A correlation rule relates the Maya day count to Julian Day Numbers. This implementation uses the GMT constant 584,283; other proposed correlations exist."
+    }
+  ],
+  "example": "12.19.19.17.19 is followed by 13.0.0.0.0. This is a normal turnover of the Long Count's higher position, not the end of time. Under the common GMT correlation it happened on 21 December 2012.",
+  "history": "Maya communities developed several interacting calendars. The Long Count is particularly valuable for historical inscriptions because it records elapsed days over long spans. Other Maya systems, such as Tzolkin and Haab, are related but distinct cycles.",
+  "model": "This implementation computes an arithmetic Maya Long Count using the Goodman-Martinez-Thompson constant 584283, supporting reversible pre-epoch day counts. The beginning is a traditional mythic reference, not a modern archaeological measurement.",
+  "limits": "Scholars have proposed alternative correlations. Selecting a different constant changes conversions with Gregorian dates while leaving the internal five-place counting system intact. This guide explains the implemented model and does not assert that every Maya site and era used identical conventions.",
+  "sources": [
+    "Smithsonian National Museum of the American Indian: https://maya.nmai.si.edu/calendar/maya-calendar-converter",
+    "Published chronology study: https://pmc.ncbi.nlm.nih.gov/articles/PMC3623374/",
+    "Code model: https://github.com/Infiltrator-Projects/Calendar-Mayan/blob/main/docs/MODEL.md"
+  ]
+}
