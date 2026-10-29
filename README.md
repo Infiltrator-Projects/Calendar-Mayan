@@ -47,3 +47,7 @@ Run the downloaded `.run --profile aggressive` as an ordinary user. It provision
 Each package owns only this provider and its passive documentation. Its `Replaces` declaration transfers this module from `infiltrator-calendar-resources` on existing machines; other modules and Common source remain intact. Native package versions use `+native1` so a same-version generic package does not replace a local optimized build. See [packaging details](docs/PACKAGING.md).
 
 Translations use the provider-owned gettext domain `infiltrator-calendar-mayan`. The package ships only its own messages in `/usr/share/locale/<language>/LC_MESSAGES/infiltrator-calendar-mayan.mo`; Common’s combined translation package is not required. The exact compiled catalogues are checked through the provider ABI before packaging.
+
+## Illustrated guide and installed layout
+
+The deployed provider owns only its compiled `Maya Long Count Calendar.so` and a three-page illustrated public guide, `Maya Long Count Calendar.pdf`. Build provenance is part of Debian package metadata; engineering documentation remains in this repository.
