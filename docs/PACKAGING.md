@@ -6,7 +6,7 @@ Version: `VERSION`. Package: `infiltrator-calendar-mayan`.
 
 The aggressive installer compiles twice with GCC: instrumentation and actual provider-ABI training, then `-O3`, the compiler's local CPU target, LTO and measured PGO. Missing profile data is a build failure. Copy-regression and model-accuracy checks run during training, on the final build and after stripping. Floating-point semantics are preserved; no fast-math flag is used. Calendar authority comparison remains a separate forensic audit because some published authorities intentionally disagree.
 
-The native package has version `VERSION+native1`; the generic release uses `VERSION`. Both own only `/System/Resources/Calendars/Maya Long Count Calendar.so` and passive documentation under `/System/Resources/Documentation/Calendar-Mayan/`. No installer scripts, training code or source archive are installed. The native build's source, PGO, LTO and SHA-256 are retained in Debian control metadata. Runtime dependencies include the actual minimum GLIBC symbol version, GLib where needed, and an ICU 72–81 alternative for ICU-backed formatting.
+The native package has version `VERSION+native1`; the generic release uses `VERSION`. Both own only `/System/Resources/Calendars/Maya Long Count Calendar.so` and passive documentation under `/System/Resources/Documentation/Calendar-Mayan.pdf`. No installer scripts, training code or source archive are installed. The native build's source, PGO, LTO and SHA-256 are retained in Debian control metadata. Runtime dependencies include the actual minimum GLIBC symbol version, GLib where needed, and an ICU 72–81 alternative for ICU-backed formatting.
 
 `Replaces: infiltrator-calendar-resources` permits dpkg to transfer this provider's existing path from the old combined package without deleting the other providers. Removing this package removes its own module; removing a consumer does not. Reinstalling the legacy combined package is not the independent upgrade path; InfiltratorOS now installs the independent providers. Common's source implementation is preserved.
 
@@ -17,4 +17,4 @@ Translations use the provider-owned gettext domain `infiltrator-calendar-mayan`.
 
 ## User-facing two-file contract
 
-The only installed provider files are `/System/Resources/Calendars/Maya Long Count Calendar.so` and `/System/Resources/Documentation/Calendar-Mayan/Maya Long Count Calendar.pdf`. The compiled module owns translations; source audits and tests remain in GitHub.
+The only installed provider files are `/System/Resources/Calendars/Maya Long Count Calendar.so` and `/System/Resources/Documentation/Calendar-Mayan.pdfMaya Long Count Calendar.pdf`. The compiled module owns translations; source audits and tests remain in GitHub.

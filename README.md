@@ -50,4 +50,4 @@ Translations use the provider-owned gettext domain `infiltrator-calendar-mayan`.
 
 ## Illustrated guide and installed layout
 
-The deployed provider owns only its compiled `Maya Long Count Calendar.so` and a three-page illustrated public guide, `Maya Long Count Calendar.pdf`. Build provenance is part of Debian package metadata; engineering documentation remains in this repository.
+The deployed provider owns only its compiled `Maya Long Count Calendar.so` and a three-page illustrated public guide, `Calendar-Mayan.pdf`. Build provenance is part of Debian package metadata; engineering documentation remains in this repository.
